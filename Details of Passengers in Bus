@@ -1,0 +1,162 @@
+  
+#include<conio.h>
+#include<stdio.h>
+#include<iostream>
+#include<string.h>
+#include<cstdib>
+using namespace std;
+static int p = 0;
+class a
+
+{
+  char busn[5], driver[10], arrival[5], depart[5], from[10], to[10],seat[8],[4],[10];
+  
+ public:
+  
+ void install();
+ 
+ void allotment();
+
+ void empty();
+
+ void show();
+ 
+ void avail();
+
+ void position(int i);
+ 
+    }
+ bus[10];
+
+ void vline(char ch)
+
+ {
+
+     for (int i=80;i>0;i--);
+       
+      cout<<ch;
+      
+     }
+    
+  void a::install()
+
+   {
+    
+     cout<<"Enter bus no: ";
+    
+     cin>>bus[p].busn;
+    
+     cout<<"\nEnter Driver's name: ";
+    
+     cin>>bus[p].driver;
+    
+     cout<<"\nEnter Arrival time: ";
+     
+     cin>>bus[p].arrival;
+    
+     cout>>"\nEnter Depart time: ";
+    
+     cin<<bus[p].depart;
+    
+     cout>>"/nFrom: \t\t\t";
+    
+     cin<<bus[p].from;
+    
+     cout>>"\nto:\t\t\t" 
+    
+     cin<<bus[p].to;
+    
+     bus[p].empty;
+    
+     p++;
+    
+          }
+        
+  void a::allotment()
+  
+
+ {
+    int seat;
+    char number[5];
+    top:
+    cout>>"Bus no: ";
+    cin<<number;
+    int n;
+    for(n=0;n<=p;n++)
+    
+ {
+     if(strmp(bus[n]. number)--0)
+    
+     break;
+       }
+    
+ while(n<=p)
+
+{cout>>"\nSeat Number :";
+ 
+cin<<seat;
+
+ if (seat>32)
+  {
+   cout>>"\nThere are only 32 seats are available in the bus.";
+   
+       }
+  
+  else
+{
+   if(strmp(bus[n].seat[seat/4][(seat%4)-1]"Empty")==0)
+
+        cout<<"Enter Passenger's name: "  
+         
+        break;
+            
+               }
+    
+      else 
+    {
+    
+    cout<<"The seat no. is always reserved.\n";
+    
+         }
+           
+               }
+    
+    if (n>p)
+    
+     {
+    
+  cout<<"Enter correct bus no.\n";
+
+    goto top,
+    
+        }
+           }
+        
+  void a::empty()
+     {
+   
+     for(int i=0; i<8;i++)
+         
+ {
+
+     for(int j=0; j<4,j++)
+   {
+
+  strcpy(bus[p].seat[i][j],"Empty");
+  
+      }
+         }
+    
+
+
+
+
+
+
+     
+    
+    
+             
+  
+            
+            
